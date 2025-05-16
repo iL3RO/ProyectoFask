@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Resultados de Búsqueda{% endblock %}
+{% block content %}
+<section class="results-section">
+    <h2 class="mb-4">Resultados</h2>
+    {% if motos %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Ciudad</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for moto in motos %}
+            <tr>
+                <td>{{ moto.detalles.modelo }}</td>
+                <td>{{ moto.ciudad }}</td>
+                <td><a href="{{ url_for('moto_detail', id_moto=moto.id_moto) }}">Detalle</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('buscar') }}" class="btn custom-btn mt-3">Volver a la Búsqueda</a>
+    {% else %}
+    <p>No se encontraron motos.</p>
+    <a href="{{ url_for('buscar') }}" class="btn custom-btn mt-3">Volver a la Búsqueda</a>
+    {% endif %}
+</section>
+{% endblock %}

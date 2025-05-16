@@ -1,0 +1,11 @@
+.hero-logo {
+    max-width: 250px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+.hero-logo:hover {
+    transform: scale(1.1);
+}
+.search-section, .results-section, .detail-section {
+    padding: 20px 0;
+}

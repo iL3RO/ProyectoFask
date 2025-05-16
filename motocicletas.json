@@ -1,0 +1,191 @@
+[
+    {
+        "id_moto": "moto_001",
+        "ciudad": "Sevilla",
+        "detalles": {"marca": "Yamaha", "modelo": "XJ6", "año": 2014},
+        "especificaciones": {
+            "tipo": "Naked",
+            "cilindrada_cc": 600,
+            "potencia_hp": 78,
+            "autonomia_km": null,
+            "tiene_abs": true
+        },
+        "disponibilidad": {
+            "estado": "Disponible",
+            "precio_alquiler_dia": 50,
+            "estadisticas_uso": {
+                "veces_alquilada": 45,
+                "horas_monitoreo": 120,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-02-15T00:00:00Z", "duracion_dias": 2},
+                    {"fecha_inicio": "2025-03-01T00:00:00Z", "duracion_dias": 3}
+                ]
+            }
+        }
+    },
+    {
+        "id_moto": "moto_002",
+        "ciudad": "Sevilla",
+        "detalles": {"marca": "Ducati", "modelo": "Panigale V4", "año": 2023},
+        "especificaciones": {
+            "tipo": "Deportiva",
+            "cilindrada_cc": 1000,
+            "potencia_hp": 215,
+            "autonomia_km": null,
+            "tiene_abs": true
+        },
+        "disponibilidad": {
+            "estado": "En uso",
+            "precio_alquiler_dia": 150,
+            "estadisticas_uso": {
+                "veces_alquilada": 30,
+                "horas_monitoreo": 95,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-03-05T00:00:00Z", "duracion_dias": 1},
+                    {"fecha_inicio": "2025-02-20T00:00:00Z", "duracion_dias": 4}
+                ]
+            }
+        }
+    },
+    {
+        "id_moto": "moto_006",
+        "ciudad": "Sevilla",
+        "detalles": {"marca": "Zero", "modelo": "SR/F", "año": 2022},
+        "especificaciones": {
+            "tipo": "Eléctrica",
+            "cilindrada_cc": null,
+            "potencia_hp": 110,
+            "autonomia_km": 259,
+            "tiene_abs": false
+        },
+        "disponibilidad": {
+            "estado": "Reservada",
+            "precio_alquiler_dia": 130,
+            "estadisticas_uso": {
+                "veces_alquilada": 18,
+                "horas_monitoreo": 85,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-03-08T00:00:00Z", "duracion_dias": 2}
+                ]
+            }
+        }
+    },
+    {
+        "id_moto": "moto_003",
+        "ciudad": "Barcelona",
+        "detalles": {"marca": "BMW", "modelo": "R 1250 GS", "año": 2021},
+        "especificaciones": {
+            "tipo": "Naked",
+            "cilindrada_cc": 1250,
+            "potencia_hp": 136,
+            "autonomia_km": null,
+            "tiene_abs": true
+        },
+        "disponibilidad": {
+            "estado": "Disponible",
+            "precio_alquiler_dia": 120,
+            "estadisticas_uso": {
+                "veces_alquilada": 25,
+                "horas_monitoreo": 110,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-02-10T00:00:00Z", "duracion_dias": 5},
+                    {"fecha_inicio": "2025-03-03T00:00:00Z", "duracion_dias": 2}
+                ]
+            }
+        }
+    },
+    {
+        "id_moto": "moto_004",
+        "ciudad": "Barcelona",
+        "detalles": {"marca": "Kawasaki", "modelo": "KX450", "año": 2022},
+        "especificaciones": {
+            "tipo": "Trail",
+            "cilindrada_cc": 450,
+            "potencia_hp": 55,
+            "autonomia_km": null,
+            "tiene_abs": false
+        },
+        "disponibilidad": {
+            "estado": "Mantenimiento",
+            "precio_alquiler_dia": 80,
+            "estadisticas_uso": {
+                "veces_alquilada": 20,
+                "horas_monitoreo": 130,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-02-25T00:00:00Z", "duracion_dias": 3}
+                ]
+            }
+        }
+    },
+    {
+        "id_moto": "moto_005",
+        "ciudad": "Barcelona",
+        "detalles": {"marca": "Harley", "modelo": "Shope", "año": 2020},
+        "especificaciones": {
+            "tipo": "Trail",
+            "cilindrada_cc": 883,
+            "potencia_hp": 51,
+            "autonomia_km": null,
+            "tiene_abs": true
+        },
+        "disponibilidad": {
+            "estado": "Disponible",
+            "precio_alquiler_dia": 90,
+            "estadisticas_uso": {
+                "veces_alquilada": 35,
+                "horas_monitoreo": 105,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-03-07T00:00:00Z", "duracion_dias": 1},
+                    {"fecha_inicio": "2025-02-18T00:00:00Z", "duracion_dias": 2}
+                ]
+            }
+        }
+    },
+    {
+        "id_moto": "moto_007",
+        "ciudad": "Valencia",
+        "detalles": {"marca": "Honda", "modelo": "CBR1000RR", "año": 2023},
+        "especificaciones": {
+            "tipo": "Deportiva",
+            "cilindrada_cc": 1000,
+            "potencia_hp": 189,
+            "autonomia_km": null,
+            "tiene_abs": true
+        },
+        "disponibilidad": {
+            "estado": "Disponible",
+            "precio_alquiler_dia": 140,
+            "estadisticas_uso": {
+                "veces_alquilada": 22,
+                "horas_monitoreo": 90,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-03-02T00:00:00Z", "duracion_dias": 2}
+                ]
+            }
+        }
+    },
+    {
+        "id_moto": "moto_008",
+        "ciudad": "Valencia",
+        "detalles": {"marca": "KTM", "modelo": "790 Adventure", "año": 2021},
+        "especificaciones": {
+            "tipo": "Trail",
+            "cilindrada_cc": 790,
+            "potencia_hp": 95,
+            "autonomia_km": null,
+            "tiene_abs": true
+        },
+        "disponibilidad": {
+            "estado": "En uso",
+            "precio_alquiler_dia": 110,
+            "estadisticas_uso": {
+                "veces_alquilada": 28,
+                "horas_monitoreo": 115,
+                "historial_alquileres": [
+                    {"fecha_inicio": "2025-03-06T00:00:00Z", "duracion_dias": 3},
+                    {"fecha_inicio": "2025-02-15T00:00:00Z", "duracion_dias": 2}
+                ]
+            }
+        }
+    }
+]

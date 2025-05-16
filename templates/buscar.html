@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Buscar Motos{% endblock %}
+{% block content %}
+<section class="search-section">
+    <h2 class="mb-4">Buscar Motos</h2>
+    <form action="{{ url_for('resultados') }}" method="POST" class="mb-4">
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Ej. XJ6">
+        </div>
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <select class="form-control" id="ciudad" name="ciudad">
+                <option value="">Todas</option>
+                {% for ciudad in ciudades %}
+                <option value="{{ ciudad }}">{{ ciudad }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn custom-btn">Buscar</button>
+    </form>
+</section>
+{% endblock %}

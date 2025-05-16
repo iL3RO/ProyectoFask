@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Detalles de {{ moto.detalles.modelo }}{% endblock %}
+{% block content %}
+<section class="detail-section">
+    <h2>{{ moto.detalles.marca }} {{ moto.detalles.modelo }}</h2>
+    <p><strong>Ciudad:</strong> {{ moto.ciudad }}</p>
+    <p><strong>Año:</strong> {{ moto.detalles.año }}</p>
+    <p><strong>Tipo:</strong> {{ moto.especificaciones.tipo }}</p>
+    <p><strong>Cilindrada:</strong> {{ moto.especificaciones.cilindrada_cc|default('N/A') }} cc</p>
+    <p><strong>Potencia:</strong> {{ moto.especificaciones.potencia_hp }} HP</p>
+    <p><strong>Autonomía:</strong> {{ moto.especificaciones.autonomia_km|default('N/A') }} km</p>
+    <p><strong>ABS:</strong> {{ 'Sí' if moto.especificaciones.tiene_abs else 'No' }}</p>
+    <p><strong>Estado:</strong> {{ moto.disponibilidad.estado }}</p>
+    <p><strong>Precio por día:</strong> {{ moto.disponibilidad.precio_alquiler_dia }} €</p>
+    <p><strong>Veces alquilada:</strong> {{ moto.disponibilidad.estadisticas_uso.veces_alquilada }}</p>
+    <a href="{{ url_for('buscar') }}" class="btn custom-btn mt-3">Volver a Resultados</a>
+</section>
+{% endblock %}

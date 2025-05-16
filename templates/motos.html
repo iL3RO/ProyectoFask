@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Buscar Motos{% endblock %}
+{% block content %}
+<section class="search-section">
+    <h2>Buscar Motos</h2>
+    <form action="{{ url_for('motos') }}" method="POST" class="mb-4">
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" value="{{ modelo|default('') }}" placeholder="Ej. XJ6">
+        </div>
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <select class="form-control" id="ciudad" name="ciudad">
+                <option value="">Todas</option>
+                {% for ciudad in ciudades %}
+                <option value="{{ ciudad }}" {% if ciudad == ciudad_seleccionada %}selected{% endif %}>{{ ciudad }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn custom-btn">Buscar</button>
+    </form>
+
+    {% if motos %}
+    <h3>Resultados</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Ciudad</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for moto in motos %}
+            <tr>
+                <td>{{ moto.detalles.modelo }}</td>
+                <td>{{ moto.ciudad }}</td>
+                <td><a href="{{ url_for('moto_detail', id_moto=moto.id_moto) }}">Detalle</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No se encontraron motos.</p>
+    {% endif %}
+</section>
+{% endblock %}
