@@ -1,0 +1,6 @@
+# Entorno virtual
+bin/
+include/
+lib/
+lib64
+pyvenv.cfg
